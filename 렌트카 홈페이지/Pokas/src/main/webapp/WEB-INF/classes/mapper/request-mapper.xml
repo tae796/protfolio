@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="request">
+
+	<!-- 견적문의 작성 -->
+	<insert id="req_insert" parameterType="pokas.web.dto.RequestDTO">
+		insert into smile_request values(null, #{type},#{brand},#{car_type},#{region},#{phone},#{email},#{months},#{detail},now(),#{status},#{name},#{center},#{team},#{member},#{url} )
+	</insert> 
+	
+	<!-- 견적문의 수정 -->
+	<update id="req_update" parameterType="pokas.web.dto.RequestDTO">
+		update smile_request set status = #{status}, detail = #{detail}, member=#{member} where id = #{id}  
+	</update>
+
+	<select id="req_one" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request where id = #{id}
+	</select> 
+
+
+	<!-- 견적문의 보기 -->
+	<select id="req_all" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request order by id desc limit 50
+	</select>
+		
+	<select id="req_all_member_filter" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request where member = #{member} order by id desc limit 50
+	</select>
+	
+	<select id="req_all_status_filter" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request where status = #{status} order by id desc limit 50
+	</select>
+	
+	
+	
+	<select id="req_all_by_member" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request order by member desc limit 50
+	</select>
+	
+	<select id="req_all_by_name" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request order by name desc limit 50
+	</select>
+	
+	<select id="req_all_by_status" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request order by status desc limit 50
+	</select>
+	
+	
+	<select id="req_all_center" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request where center=#{center} order by id desc limit 50
+	</select> 
+	
+	<select id="req_all_team" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request where center=#{center} and team = #{team} order by id desc limit 50
+	</select> 
+	
+	<select id="req_all_name" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request where member=#{member} order by id desc limit 50
+	</select> 
+	
+	<!-- 견적문의  master 검색 -->
+	<select id="req_search_name" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request where name = #{name} order by id desc
+	</select>
+	
+	<select id="req_search_brand" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request where brand = #{brand} order by id desc
+	</select>
+	
+	<select id="req_search_region" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request where region = #{region} order by id desc
+	</select>
+	
+	<select id="req_search_phone" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request where phone = #{phone} order by id desc
+	</select>
+	
+	<select id="req_search_date" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request where DATE_FORMAT(`date`,"%Y-%m-%d") > DATE_FORMAT(#{start},"%Y-%m-%d") and DATE_FORMAT(#{end},"%Y-%m-%d") > DATE_FORMAT(`date`,"%Y-%m-%d") order by id desc 
+	</select> 
+	
+	<!-- 견적문의  supervisor 검색 -->
+	<select id="req_search_name_center" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request where name = #{name} and center = #{center} order by id desc
+	</select>
+	
+	<select id="req_search_brand_center" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request where brand = #{brand} and center = #{center} order by id desc
+	</select>
+	
+	<select id="req_search_region_center" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request where region = #{region} and center = #{center} order by id desc
+	</select>
+	
+	<select id="req_search_phone_center" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request where phone = #{phone} and center = #{center} order by id desc
+	</select>
+	
+	<select id="req_search_date_center" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request where DATE_FORMAT(`date`,"%Y-%m-%d") > #{start} and #{end} > DATE_FORMAT(`date`,"%Y-%m-%d")  and center = #{center} order by id desc 
+	</select> 
+
+	<!-- 견적문의  manager 검색 -->
+	<select id="req_search_name_team" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request where name = #{name} and center = #{center} and team = #{team} order by id desc
+	</select>
+	
+	<select id="req_search_brand_team" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request where brand = #{brand} and center = #{center} and team = #{team} order by id desc
+	</select>
+	
+	<select id="req_search_region_team" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request where region = #{region} and center = #{center} and team = #{team} order by id desc
+	</select>
+	
+	<select id="req_search_phone_team" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request where phone = #{phone} and center = #{center} and team = #{team} order by id desc
+	</select>
+	
+	<select id="req_search_date_team" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request where DATE_FORMAT(`date`,"%Y-%m-%d") > #{start} and #{end} > DATE_FORMAT(`date`,"%Y-%m-%d")  and center = #{center} and team = #{team} order by id desc 
+	</select>
+	
+	<!--견적문의 member 검색 -->
+	<select id="req_search_name_name" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request where name = #{name} and member= #{member} order by id desc
+	</select>
+	
+	<select id="req_search_brand_name" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request where brand = #{brand} and member= #{member} order by id desc
+	</select>
+	
+	<select id="req_search_region_name" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request where region = #{region} and member= #{member} order by id desc
+	</select>
+	
+	<select id="req_search_phone_name" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request where phone = #{phone} and member= #{member} order by id desc
+	</select>
+	
+	<select id="req_search_date_name" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request where DATE_FORMAT(`date`,"%Y-%m-%d") > #{start} and #{end} > DATE_FORMAT(`date`,"%Y-%m-%d")  and member= #{member} order by id desc 
+	</select>
+
+
+	<!-- 날짜버튼 개수카운트, 리스트 master -->
+	<select id="req_all_count" resultType="int">
+		select count(*) from smile_request 
+	</select>
+	
+	
+	<select id="req_today" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request where DATE_FORMAT(`date`,"%Y-%m-%d") = CURDATE() order by id desc
+	</select>
+	
+	<select id="req_today_count" resultType="int">
+		select count(*) from smile_request where DATE_FORMAT(`date`,"%Y-%m-%d") = CURDATE()
+	</select>
+	
+	<select id="req_yesterday" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request where DATE_FORMAT(`date`,"%Y-%m-%d") = CURDATE() - INTERVAL 1 DAY order by id desc
+	</select>
+	
+	<select id="req_yesterday_count" resultType="int">
+		select count(*) from smile_request where DATE_FORMAT(`date`,"%Y-%m-%d") = CURDATE() - INTERVAL 1 DAY
+	</select>
+	
+	<select id="req_month" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request where DATE_FORMAT(`date`,"%Y-%m-%d") > CURDATE() - INTERVAL 1 MONTH order by id desc
+	</select>
+	
+	<select id="req_month_count" resultType="int">
+		select count(*) from smile_request where DATE_FORMAT(`date`,"%Y-%m-%d") > CURDATE() - INTERVAL 1 MONTH
+	</select>
+
+	<!-- 날짜버튼 개수카운트, 리스트  center -->
+	<select id="req_all_count_center" resultType="int">
+		select count(*) from smile_request where center = #{center}
+	</select>
+	
+	
+	<select id="req_today_center" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request where center = #{center} and DATE_FORMAT(`date`,"%Y-%m-%d") = CURDATE() order by id desc
+	</select>
+	
+	<select id="req_today_count_center" resultType="int">
+		select count(*) from smile_request where center = #{center} and DATE_FORMAT(`date`,"%Y-%m-%d") = CURDATE()
+	</select>
+	
+	<select id="req_yesterday_center" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request where center = #{center} and DATE_FORMAT(`date`,"%Y-%m-%d") = CURDATE() - INTERVAL 1 DAY order by id desc
+	</select>
+	
+	<select id="req_yesterday_count_center" resultType="int">
+		select count(*) from smile_request where center = #{center} and DATE_FORMAT(`date`,"%Y-%m-%d") = CURDATE() - INTERVAL 1 DAY
+	</select>
+	
+	<select id="req_month_center" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request where center = #{center} and DATE_FORMAT(`date`,"%Y-%m-%d") > CURDATE() - INTERVAL 1 MONTH order by id desc
+	</select>
+	
+	<select id="req_month_count_center" resultType="int">
+		select count(*) from smile_request where center = #{center} and DATE_FORMAT(`date`,"%Y-%m-%d") > CURDATE() - INTERVAL 1 MONTH
+	</select>
+
+<!-- 날짜버튼 개수카운트, 리스트  manager -->
+
+	
+	<select id="req_all_count_team" resultType="int">
+		select count(*) from smile_request where center = #{center} and team = #{team}
+	</select>
+	
+	
+	<select id="req_today_team" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request where center = #{center} and team = #{team} and DATE_FORMAT(`date`,"%Y-%m-%d") = CURDATE() order by id desc
+	</select>
+	
+	<select id="req_today_count_team" resultType="int">
+		select count(*) from smile_request where center = #{center} and team = #{team} and DATE_FORMAT(`date`,"%Y-%m-%d") = CURDATE()
+	</select>
+	
+	<select id="req_yesterday_team" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request where center = #{center} and team = #{team} and DATE_FORMAT(`date`,"%Y-%m-%d") = CURDATE() - INTERVAL 1 DAY order by id desc
+	</select>
+	
+	<select id="req_yesterday_count_team" resultType="int">
+		select count(*) from smile_request where center = #{center} and team = #{team} and DATE_FORMAT(`date`,"%Y-%m-%d") = CURDATE() - INTERVAL 1 DAY
+	</select>
+	
+	<select id="req_month_team" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request where center = #{center} and team = #{team} and DATE_FORMAT(`date`,"%Y-%m-%d") > CURDATE() - INTERVAL 1 MONTH order by id desc
+	</select>
+	
+	<select id="req_month_count_team" resultType="int">
+		select count(*) from smile_request where center = #{center} and team = #{team} and DATE_FORMAT(`date`,"%Y-%m-%d") > CURDATE() - INTERVAL 1 MONTH
+	</select>
+
+<!-- 날짜버튼 개수카운트, 리스트  member -->
+
+	
+	<select id="req_all_count_name" resultType="int">
+		select count(*) from smile_request where member= #{member}
+	</select>
+	
+	
+	<select id="req_today_name" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request where member= #{member} and DATE_FORMAT(`date`,"%Y-%m-%d") = CURDATE() order by id desc
+	</select>
+	
+	<select id="req_today_count_name" resultType="int">
+		select count(*) from smile_request where member= #{member} and DATE_FORMAT(`date`,"%Y-%m-%d") = CURDATE()
+	</select>
+	
+	<select id="req_yesterday_name" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request where member= #{member} and DATE_FORMAT(`date`,"%Y-%m-%d") = CURDATE() - INTERVAL 1 DAY order by id desc
+	</select>
+	
+	<select id="req_yesterday_count_name" resultType="int">
+		select count(*) from smile_request where member= #{member} and DATE_FORMAT(`date`,"%Y-%m-%d") = CURDATE() - INTERVAL 1 DAY
+	</select>
+	
+	<select id="req_month_name" resultType="pokas.web.dto.RequestDTO">
+		select * from smile_request where member= #{member} and DATE_FORMAT(`date`,"%Y-%m-%d") > CURDATE() - INTERVAL 1 MONTH order by id desc
+	</select>
+	
+	<select id="req_month_count_name" resultType="int">
+		select count(*) from smile_request where member= #{member} and DATE_FORMAT(`date`,"%Y-%m-%d") > CURDATE() - INTERVAL 1 MONTH
+	</select>
+	
+	
+	<!-- 견적문의 삭제 -->
+	<delete id="req_delete">
+		delete from smile_request where id = #{id}
+	</delete>	
+	
+	
+	
+	
+</mapper>

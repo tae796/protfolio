@@ -1,0 +1,161 @@
+@charset "utf-8";
+
+/* 핫딜 */
+body{background-color: #eee;}
+.searchbox .search-title{background-color: #fff;}
+.searchbox ul .searchbox-list .rbox{background-color: #fff;}
+footer{background-color: #fff;}
+footer .bottom{background-color: #fff;}
+
+
+#main{background-color: #eee;}
+
+
+/* search */
+#body{width: 100%; height: auto; background-color: #eee; padding-top: 50px; }
+#search{max-width: 1300px; margin: 0 auto; padding: 0 20px 15px; display: flex; justify-content:flex-end;}
+#search form{width: calc(100% / 8 * 2); margin-right: 2%;}
+#search form input{width: 100%; height: 45px; border: 1px solid #b8b8b8; outline: none;}
+#search button{border: none; width: 8%; height: 45px; text-align: center;  background: linear-gradient(to right, #e6381e, #ff9e4a); box-shadow: 0 1px 3px;}
+#search button a{display: block; color: #fff;}
+
+/* month cont */
+
+#month{width: 100%; height: auto; background-color: #eee; padding-bottom: 55px;}
+#month .cont{max-width: 1300px; margin: 0 auto; }
+
+#month .cont .title{width: 100%; height: 60px; border-bottom: 2px solid #e6371e; padding-bottom: 15px;}
+#month .cont .title h1{font-size: 25px; font-weight: bold; color: #e6371e;}
+  
+/* month box */
+
+#month .cont .box{width: 100%; height: 320px; display: flex; background-color: #fff; margin-top: 30px; }
+
+/* month left */
+
+#month .cont .box .left_part{width: calc(100% / 6 * 2); height: 100%; }
+#month .cont .box .left_part .img{width: 100%; height: 100%; background-size: contain; background-repeat: no-repeat; background-position: 50% 50%;}
+/* month right */
+
+#month .cont .box .right_part{width: calc(100% / 6 * 4); padding: 10px 0;}
+#month .cont .box .right_part .top{width: 100%; height: 48px; color: #fff; background: linear-gradient(to right, #e6381e, #ff9f4b); padding-left: 18px; margin-bottom: 10px; }
+#month .cont .box .right_part .top h1{font-size: 22px; line-height: 48px;}
+
+/* month right middle */
+
+#month .cont .box .right_part .middle{width: 100%; border-top: 1px solid #999; border-bottom: 1px solid #999; padding: 10px;} 
+
+#month .cont .box .right_part .middle h2{font-size: 20px; font-weight: bold; display: flex; align-items: center; margin-bottom: 10px;}
+#month .cont .box .right_part .middle h2 > div{width: 4px; height: 23px; background-color: #e6371e; margin: 0 5px;}
+#month .cont .box .right_part .middle h2 > span{font-size: 23px; font-weight: bold;}
+
+#month .cont .box .right_part .middle table{width: 100%;}
+
+#month .cont .box .right_part .middle table tr td{height: 25px; font-size: 15px;}
+#month .cont .box .right_part .middle table tr td:nth-child(2n-1){width: 95px; font-weight: bold;}
+
+#month .cont .box .right_part .bottom{ display: flex; justify-content: space-between; padding: 10px 10px 0 10px;}
+
+#month .cont .box .right_part .bottom .money{display: flex;}
+#month .cont .box .right_part .bottom .money h2{font-size: 15px; color: #989898; line-height: 55px;}
+#month .cont .box .right_part .bottom .money span{color: #e6371e; font-size: 28px; margin-left: 25px; line-height: 55px; font-weight: bold;}
+
+#month .cont .box .right_part .bottom button{width: 120px; height: 55px; background-image :linear-gradient(to right, #999, #999); border: none; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); }
+#month .cont .box .right_part .bottom button a{display: block;}
+#month .cont .box .right_part .bottom button a h2{font-size: 15px; color: #fff; font-weight: normal; letter-spacing: 5px;}
+
+#month .cont .box .right_part .bottom button:hover{background-image: linear-gradient(to right, #e6381e, #ff9f4b);} 
+
+/* 페이지 버튼 */
+#month .cont_button{width: 180px; height: 30px; margin: 65px auto 0; display: flex; text-align: center;  } 
+#month .cont_button button{width: 32px; height: 30px; margin-left: 5px; border: 1px solid #d4d4d4; background-color: #fff; cursor: pointer; } 
+#month .cont_button button a{display: block; font-size: 16px; font-weight: bold; color: #000;}
+#month .cont_button button:nth-child(1){background-image: url(../img/user_img/the_last.svg); background-position: 50% 50%; background-size: contain; background-repeat: no-repeat; transform: scaleX(-1);}
+#month .cont_button button:nth-child(2n){background-image: url(../img/user_img/the_next.svg); background-position: 50% 50%; background-size: contain; background-repeat: no-repeat;}
+#month .cont_button button:nth-child(5){background-image: url(../img/user_img/the_last.svg); background-position: 50% 50%; background-size: contain; background-repeat: no-repeat;}
+#month .cont_button button:nth-child(1){transform: scaleX(-1);}
+#month .cont_button button:nth-child(2){transform: scaleX(-1);}
+
+
+
+/* 모바일 */
+@media (max-width:1024px){
+    #body{padding-top: 0;}
+
+
+    #month .cont{padding: 0 10px;}
+}
+
+@media (max-width:850px){
+    #search form{width: calc(100% / 6 * 2); }
+    #search form input{height: 43px;}
+    #search button{width: 15%; height: 40px;}
+    
+    
+    #month .cont .box{height: auto; display: block; padding: 10px; transition: 0.5s;}
+    #month .cont .box .left_part{width: 100%;height: 200px;}
+    #month .cont .box .left_part .img{height: 100%; margin-top: 50px; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;}
+    #month .cont .box .right_part{width: 100%;}
+
+    
+    #month .cont_button button{width: 30px; height: 30px;}
+    #month .cont_button button a{font-size: 12px;}
+
+}
+
+@media (max-width:520px){
+    #search form{width: calc(100% / 4 * 2); }
+    #search form input{height: 33px;}
+    #search button{width: 15%; height: 30px;}
+    
+    #month .cont .box .right_part .middle h2{font-size: 15px;}
+    #month .cont .box .right_part .middle h2 > div{height: 18px;}
+    #month .cont .box .right_part .middle h2 > span{font-size: 15px;}
+
+    
+
+}
+
+@media (max-width:460px){
+    #month .cont .box .right_part .middle table tr td{font-size: 13px;}
+}
+@media (max-width:400px){
+    #search form{width: calc(100% / 4 * 2); }
+    #search form input{height: 33px;}
+    #search button{width: 15%; height: 30px;}
+
+    #month .cont .box .right_part .middle{padding: 10px 0;}
+    #month .cont .box .right_part .middle table tr td{font-size: 13px;}
+
+    #month .cont .box .right_part .bottom .money span{font-size: 20px;}
+    #month .cont .box .right_part .bottom{padding: 10px 0;}
+    
+}
+
+@media (max-width:350px){
+    #month .cont .box .right_part .bottom button{width: 100px; transition: 0.5s;}
+}
+
+
+
+/* main 모바일 */
+@media (max-width:1024px){
+    #main{background-size: 1000px; height: 395px;  padding: 69px 0 0;}
+    #main .bg{height: 325px;}
+    #main .title h3{font-size: 50px;}
+    #main .title p{font-size: 12px;}
+}
+
+@media (max-width:600px){
+    #main{background-size: 580px; height: 395px;}
+    #main .bg{height: 325px;}
+}
+
+@media (max-width:380px){
+    #main{background-size: 600px;}
+    #main .title h3{font-size: 38px;}
+    #main .title p{font-size: 10px;}
+}
+
+
+

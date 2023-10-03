@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+/* 회사소개 */
+
+/* title */
+#title{width: 100%; text-align: center; background-color: #fff; margin: 75px 0 70px;}
+#title h3{font-size: 35px; word-break: keep-all; }
+#title h3 span{font-size: 35px; color: #e10c45; word-break: keep-all;}
+
+/* img */
+
+#img{width: 100%; height: auto; background-color: #eee;}
+#img .cont{max-width: 1300px; height: auto; margin: 0 auto;}
+
+#img .title{width: 100%; height: 300px; padding: 50px; text-align: center;}
+#img .title .logo{width: 200px; height: 100px; background-image: url(../img/이미지/logo.png); background-size: cover; background-position: 50% 50%; margin: 0 auto;}
+#img .title h3{font-size: 35px; word-break: keep-all;}
+#img .title h3 span{font-size: 35px; color: #e10c45; word-break: keep-all;}
+
+#img .cont_part{width: 100%; height: 650px; padding-bottom: 50px;}
+#img .cont_part ul{width: 100%; height: 100%; display: flex;}
+#img .cont_part ul li{width: calc(100% / 4); height: 100%; }
+#img .cont_part ul li .text{text-align: center; width: 100%; height: 50%; background-color: #fff; padding: 20px; display: block;}
+#img .cont_part ul li .text h3{font-size: 18px; margin-top: 70px; color: #e10c45;}
+#img .cont_part ul li .text p{font-size: 18px; letter-spacing: -0.1px;}
+#img .cont_part ul li .img_part{width: 100%; height: 50%; display: block; background-size: cover;}
+
+#img .cont_part ul li:nth-child(1) .img_part{background-image: url(../img/user_img/img_01.jpg);}
+#img .cont_part ul li:nth-child(2) .img_part{background-image: url(../img/user_img/img_02.jpg);}
+#img .cont_part ul li:nth-child(3) .img_part{background-image: url(../img/user_img/img_03.jpg);}
+#img .cont_part ul li:nth-child(4) .img_part{background-image: url(../img/user_img/KakaoTalk_20210705_114738613.png);}
+
+#img .cont_part ul li .img_part_mo{width: 100%; height: 50%; display: block; background-size: cover; display: none;}
+
+#img .cont_part ul li:nth-child(2) .img_part_mo{background-image: url(../img/user_img/img_02.jpg);}
+#img .cont_part ul li:nth-child(4) .img_part_mo{background-image: url(../img/user_img/img_02.jpg);}
+
+
+/* last */
+
+#last{width: 100%; height: auto; padding: 50px 0;}
+#last .title{max-width: 1300px; margin: 0 auto; text-align: center; word-break: keep-all;}
+#last .title h1{line-height: 1.5;}
+
+/* 모바일 */
+@media (max-width:1024px){
+    #title{margin-top: 0;}
+    #img .cont_part{height: 1400px; transition: 0.5s; padding: 0 10px 50px;}
+    #img .cont_part ul{ flex-wrap: wrap;}
+    #img .cont_part ul li{width: calc(100% / 2); display: block; height: 50%;}
+
+    #img .cont_part ul li .text h3{margin-top: 80px;}
+}
+
+@media (max-width:770px){
+    #title h3{font-size: 25px;}
+    #title h3 span{font-size: 25px;}
+
+    #img .title h3{font-size: 25px;}
+    #img .title h3 span{font-size: 25px;}
+
+    #img .cont_part{height: 2000px; transition: 0.5s;}
+    #img .cont_part ul{ flex-wrap: wrap;}
+    #img .cont_part ul li{width: 100%; display: block; height: calc(100% / 4);}
+
+    #img .cont_part ul li .text h3{margin-top: 60px;}
+
+    #img .cont_part ul li:nth-child(2) .img_part{display: none;}
+    #img .cont_part ul li:nth-child(4) .img_part{display: none;}
+    #img .cont_part ul li .img_part_mo{display: block;}
+}
+
+@media (max-width:530px){
+    #title h3{font-size: 18px;}
+    #title h3 span{font-size: 18px;}
+
+    #img .title h3{font-size: 18px;}
+    #img .title h3 span{font-size: 18px;}
+
+}
+
+@media (max-width:484px){
+    #last .title{font-size: 12px; text-align: center; word-break: keep-all;}
+}
+
+@media (max-width:375px){
+    #last .title{font-size: 10px; text-align: center; word-break: keep-all;}
+}
+
+
+/* main 모바일 */
+@media (max-width:1024px){
+    #main{background-size: 1000px; height: 395px;  padding: 69px 0 0;}
+    #main .bg{height: 325px;}
+    #main .title h3{font-size: 50px; letter-spacing: 10px;}
+    #main .title p{font-size: 12px;}
+}
+
+@media (max-width:600px){
+   
+
+    #main{background-size: 800px; height: 395px;}
+    #main .bg{height: 325px;}
+    #main .title h3{font-size: 38px;}
+    #main .title p{font-size: 10px;}
+}
+
+@media (max-width:428px){
+    #main .title h3{font-size: 28px;}
+    #main .title p{font-size: 8px;}
+}
+
+@media (max-width:380px){
+    #main{background-size: 600px;}
+    #main .title h3{font-size: 25px;}
+    #main .title p{font-size: 8px;}
+}

@@ -1,0 +1,286 @@
+@charset "utf-8";
+
+body{background-color: #eee;}
+.searchbox .search-title{background-color: #fff;}
+.searchbox ul .searchbox-list .rbox{background-color: #fff;}
+footer{background-color: #fff;}
+footer .bottom{background-color: #fff;}
+
+/* 장기렌트 */
+
+#main{background-color: #eee;}
+
+/* 차량검색 */
+
+#search{width: 100%; height: auto; background-color: #eee; padding: 40px 0;}
+#search .cont{max-width: 1300px; margin: 0 auto;}
+#search .cont .title{width: 100%; height: 75px;  padding: 20px 25px; background: linear-gradient(to right, #e6381e, #ff9f4b);}
+#search .cont .title h2{font-size: 28px; color: #fff;}
+
+#search .table ul li .plus{font-size: 20px; color: #e6371e; display: none;}
+
+/* logo */
+
+#search .table{width: 100%; height: auto;  background-color: #fff;}
+
+
+#search .table ul li{display: flex; height: auto;  padding: 25px; padding-bottom: 15px;}
+
+.brand_wrap{width:calc(100% / 8); display: flex;}
+
+#search .table ul li .title_ul{width: 10%; }
+
+#search .table ul li .title_ul h3{font-size: 18px;color: #e6371e;}
+
+#search .table ul li .logo_part{width: 85%; height: auto; display: flex; flex-wrap: wrap;}
+#search .table ul li .logo_part .logo_img{width: 70%; height: 65px;  background-size: contain; background-repeat: no-repeat; background-position: 50% 50%;}
+
+
+
+#search .table ul li .button{width: 5%; height: auto; background-color: #fff; }
+
+#search .table ul li .button button{width: 29px; height: 29px; border: 1px solid #d4d4d4; background-color: #fff; margin: 0;  padding: 5px; cursor: pointer; vertical-align: top;}
+
+#search .table ul li .button button a{display: block; width: 100%; height: 100%; background-image: url(../img/user_img/down_01.svg); background-size: cover;  background-position: 50% 50%;}
+
+#search .table ul li.logo .logo_part .logo_img:nth-child(n+9){display: none;}
+
+
+/* car */
+
+#search .table ul li.car{display: flex;}
+
+#search .table ul li.car .logo_part .each_part{width: calc(100% / 10); margin-bottom: 20px;}
+
+#search .table ul li .logo_part .each_part label span{font-size: 15px;}
+
+#search .table ul li.car .logo_part .each_part:nth-child(n+11){display: none;}
+
+/* oil */
+
+#search .table ul li.oil .logo_part .each_part{margin:0 20px 10px 0;}
+
+#search .table ul .btn-area{margin: 0 auto; width: 150px; border-bottom: none;}
+li.btn-area button{border: none; width: 150px; height: 45px; text-align: center;  background: linear-gradient(to right, #e6381e, #ff9e4a); box-shadow: 0 1px 3px; cursor: pointer;}
+li.btn-area button a{color:#fff;}
+
+
+
+
+/* all */
+
+#all{width: 100%; height: auto; background-color: #eee; padding-bottom: 65px;}
+#all #all_search{max-width: 1300px; margin: 0 auto; padding: 20px 20px 15px; display: flex; justify-content:flex-end;}
+#all #all_search form{width: calc(100% / 8 * 2); margin-right: 2%;}
+#all #all_search form input{width: 100%; height: 45px; border: 1px solid #b8b8b8; outline: none;}
+#all #all_search button{border: none; width: 8%; height: 45px; text-align: center;  background: linear-gradient(to right, #e6381e, #ff9e4a); box-shadow: 0 1px 3px; cursor: pointer;}
+#all #all_search button a{display: block; color: #fff;}
+
+/* cont */
+
+#all .cont{max-width: 1300px; margin: 0 auto; } 
+
+#all .cont .title{width: 100%; height: 60px; border-bottom: 2px solid #e6371e; padding-bottom: 15px;}
+#all .cont .title h1{font-size: 25px; font-weight: bold; color: #e6371e;}
+
+/* img */
+
+#all .cont .img_all{width: 100%; display: flex; flex-flow: wrap; align-items: center; justify-content: space-between;}
+#all .img_all .right_part{width: calc(100% / 4 - 8px); height: 400px; border: 1px solid #b8b8b8; padding: 1%; background-color: #fff; margin-right: 3.5px; margin-top: 25px;}
+
+
+
+#all .right_part .img{width: 100%; height: 50%; padding: 0; margin: 0 auto;}
+#all .right_part .img .img_part{width: 100%; height: 100%; background-image: url(../img/user_img/car_04.png); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%; }
+
+#all .right_part .text{margin-top: 3%; text-align: center; font-size: 18px; color: #000;}
+#all .right_part .text h3{font-size: 26px; font-weight: bold;}
+#all .right_part .text p{font-size: 25px;font-weight: bold; margin: 10px 0 ; color: #e6371e;}
+#all .right_part .text p span{font-size: 15px; color: #000;}
+#all .right_part .text h4{color: #b8b8b8;}
+
+#all .right_part button{width: 40%; height: 13%; background: #999; border: none; color: #fff; font-size: 20px; line-height: 1; text-align: center; font-weight: bold; margin: 15px 30%; cursor: pointer; }
+
+#all .right_part:hover{border: 1px solid #e6371e;} 
+#all .right_part:hover button{background: linear-gradient(to right, #e6381e, #ff9e4a) ;}
+
+
+#all{width: 100%; height: auto; background-color: #eee; padding-bottom: 55px;}
+#all .cont{max-width: 1300px; margin: 0 auto; }
+
+#all .cont .title{width: 100%; height: 60px; border-bottom: 2px solid #e6371e; padding-bottom: 15px;}
+#all .cont .title h1{font-size: 25px; font-weight: bold; color: #e6371e;}
+  
+/* all box */
+
+#all .cont .box{width: 100%; height:auto; display: flex; background-color: #fff; margin-top: 30px; }
+
+/* all left */
+
+#all .cont .box .left_part{width: calc(100% / 6 * 2); height: 100%; }
+#all .cont .box .left_part .img{width: 100%; height: 100%; background-size: contain; background-repeat: no-repeat; background-position: 50% 50%;}
+/* all right */
+
+#all .cont .box .right_part{width: calc(100% / 6 * 4); padding: 10px 0;}
+#all .cont .box .right_part .top{width: 100%; height: 48px; color: #fff; background: linear-gradient(to right, #e6381e, #ff9f4b); padding-left: 18px; margin-bottom: 10px; }
+#all .cont .box .right_part .top h1{font-size: 22px; line-height: 48px;}
+
+/* all right middle */
+
+#all .cont .box .right_part .middle{width: 100%; border-top: 1px solid #999; border-bottom: 1px solid #999; padding: 10px;} 
+
+#all .cont .box .right_part .middle h2{font-size: 20px; font-weight: bold; display: flex; align-items: center; margin-bottom: 10px;}
+#all .cont .box .right_part .middle h2 > div{width: 4px; height: 23px; background-color: #e6371e; margin: 0 5px;}
+#all .cont .box .right_part .middle h2 > span{font-size: 23px; font-weight: bold;}
+
+#all .cont .box .right_part .middle table{width: 100%;}
+
+#all .cont .box .right_part .middle table tr td{height: 25px; font-size: 15px;}
+#all .cont .box .right_part .middle table tr td:nth-child(2n-1){width: 95px; font-weight: bold;}
+
+#all .cont .box .right_part .bottom{ display: flex; justify-content: space-between; padding: 10px 10px 0 10px;}
+
+#all .cont .box .right_part .bottom .money{display: flex;}
+#all .cont .box .right_part .bottom .money h2{font-size: 15px; color: #989898; line-height: 55px;}
+#all .cont .box .right_part .bottom .money span{color: #e6371e; font-size: 28px; margin-left: 25px; line-height: 55px; font-weight: bold;}
+
+#all .cont .box .right_part .bottom button{width: 120px; height: 55px; margin:15px auto; background-image :linear-gradient(to right, #999, #999); border: none; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); }
+#all .cont .box .right_part .bottom button a{display: block;}
+#all .cont .box .right_part .bottom button a h2{font-size: 15px; color: #fff; font-weight: normal; letter-spacing: 5px; margin-bottom:5px;}
+
+#all .cont .box .right_part .bottom button:hover{background-image: linear-gradient(to right, #e6381e, #ff9f4b);}
+
+
+/* 하단 버튼 */
+#all .cont_button .navi{width: 180px; height: 30px; margin: 55px auto 0; display: flex; text-align: center;  } 
+#all .cont_button .navi a{width: 32px; height: 30px; margin-left: 5px; border: 1px solid #d4d4d4; background-color: #fff; cursor: pointer;} 
+#all .cont_button button a{display: block; font-size: 16px; font-weight: bold;  color: #000;}
+#all .cont_button button:nth-child(1){background-image: url(../img/user_img/the_last.svg); background-position: 50% 50%; background-size: contain; background-repeat: no-repeat; transform: scaleX(-1);}
+#all .cont_button button:nth-child(2n){background-image: url(../img/user_img/the_next.svg); background-position: 50% 50%; background-size: contain; background-repeat: no-repeat;}
+#all .cont_button button:nth-child(5){background-image: url(../img/user_img/the_last.svg); background-position: 50% 50%; background-size: contain; background-repeat: no-repeat;}
+#all .cont_button button:nth-child(1){transform: scaleX(-1);}
+#all .cont_button button:nth-child(2){transform: scaleX(-1);}
+
+/* 모바일 */
+@media (max-width:1150px){
+   
+    
+}
+
+
+@media (max-width:1110px){
+    
+
+    
+}
+@media(max-width:1024px){
+    #search .table ul li .plus{display: block; width: 100%; text-align: center; }
+    #search .table ul li .button{display: none;}
+
+    #search .table ul li .title_ul{padding-bottom: 10px; padding-left: 15px; width: 100%; border-bottom: 1px solid #ddd;}
+    
+    #search .table > ul > li{display: block; padding: 9px 0; border-bottom: 1px solid #000;}
+
+  
+
+    /* logo */
+
+    #search .table ul li .logo_part{padding-top: 25px; width: 100%;}
+
+    
+
+    #search .table ul li .logo_part .logo_img{width: calc(100%); transition: 0.5s;}
+    
+    #search .table > ul > li.btn-area{margin: 0 atuo;}
+    
+    
+    /* car */
+    #search .table > ul > li.car{display: block;}
+
+    #search .table ul li.car .logo_part{padding-left: 15px;}
+    #search .table ul li.btn-area{margin: 0 auto; width: 100px; border-bottom: none;}
+    #search .table ul li.btn-area button{width: 100px;}
+
+   
+    /* oil */
+
+    #search .table > ul > li.oil{border-bottom: none;}
+    #search .table ul li.oil .logo_part{padding-left: 15px;}
+
+
+    /* all */
+
+    #all .img_all .right_part{width: calc(100% / 2 - 8px);}
+    #all .cont_button{margin: 55px auto 0;}
+
+      #all .cont{padding: 0 10px;}
+  
+
+}
+
+@media (max-width:900px){
+    
+    #all #all_search form{width: calc(100% / 6 * 2); }
+    #all #all_search form input{height: 43px;}
+    #all #all_search button{width: 15%; height: 40px;}
+
+   
+    #all .cont_button button{width: 30px; height: 30px;}
+    #all .cont_button button a{font-size: 12px;}
+}
+@media (max-width:850px){
+
+    #all .cont .box{height: auto; display: block; padding: 10px; transition: 0.5s;}
+    #all .cont .box .left_part{width: 100%;height: 200px;}
+    #all .cont .box .left_part .img{height: 100%; margin-top: 50px; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;}
+    #all .cont .box .right_part{width: 100%;}
+
+    }
+
+@media (max-width:830px){
+    .brand_wrap{width: calc(100% / 4);}
+    #search .table ul li .logo_part .logo_img{width: calc(100%); transition: 0.5s;}
+
+    #search .table ul li.car .logo_part .each_part{width: calc(100% / 5);}
+}
+
+@media (max-width:584px){
+    #search{padding-top: 0;}
+}
+
+@media (max-width:528px){
+    #all #all_search form{width: calc(100% / 4 * 2); }
+    #all #all_search form input{height: 33px;}
+    #all #all_search button{width: 15%; height: 30px;}
+
+   
+    #all .img_all .right_part{width: 100%;}
+
+        #all .cont .box .right_part .middle h2{font-size: 15px;}
+    #all .cont .box .right_part .middle h2 > div{height: 18px;}
+    #all .cont .box .right_part .middle h2 > span{font-size: 15px;}
+}
+
+@media (max-width:400px){
+
+    #search .table ul li.car .logo_part .each_part{width: calc(100% / 2);}
+
+    #all #all_search form{width: calc(100% / 4 * 2); }
+    #all #all_search form input{height: 33px;}
+    #all #all_search button{width: 15%; height: 30px;}
+
+    
+}
+
+/* main 모바일 */
+@media (max-width:1024px){
+    
+}
+
+@media (max-width:600px){
+
+}
+
+@media (max-width:380px){
+
+}

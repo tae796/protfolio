@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="car">
+
+	<!-- 차 업로드 -->
+	<insert id="c_insert_rent" parameterType="pokas.web.dto.CarDTO">
+		insert into smile_car values (null,1, #{name}, #{price}, #{initcost}, #{size},#{oil_rate},#{oil_type},#{image}, #{brand})
+	</insert>
+	
+	<insert id="c_insert_auto" parameterType="pokas.web.dto.CarDTO">
+		insert into smile_car values (null,2, #{name}, #{price}, #{initcost} #{size},#{oil_rate},#{oil_type},#{image}, #{brand})
+	</insert>
+	
+	
+	<select id="c_selectcount1" resultType="int">
+		select count(*) from smile_car where type = 1
+	</select>
+	
+	<select id="c_selectcount2" resultType="int">
+		select count(*) from smile_car where type = 2
+	</select>
+	
+	<select id="c_select_one" resultType="pokas.web.dto.CarDTO">
+		select * from smile_car where id = #{id}
+	</select>	
+
+	
+	<select id="c_rent_all" resultType="pokas.web.dto.CarDTO">
+		select * from smile_car where type =  1 order by id desc limit #{start},#{end}
+	</select>
+	
+	<select id="c_auto_all" resultType="pokas.web.dto.CarDTO">
+		select * from smile_car where type =  2 order by id desc limit #{start},#{end}
+	</select>
+	
+	<!-- 차량 검색 -->
+	<select id="c_search_rent" resultType="pokas.web.dto.CarDTO">
+		select * from smile_car where type = 1 and brand = #{brand}
+	</select>
+	
+	<select id="c_search_rent_by_size" resultType="pokas.web.dto.CarDTO">
+		select * from smile_car where type = 1 and size=#{size}
+	</select>
+	
+	<select id="c_search_rent_by_oil" resultType="pokas.web.dto.CarDTO">
+		select * from smile_car where type = 1 and oil_type=#{oil_type}
+	</select>
+	
+	<select id="c_search_rent_size" resultType="pokas.web.dto.CarDTO">
+		select * from smile_car where type = 1 and brand = #{brand} and size=#{size}
+	</select>
+	
+	<select id="c_search_rent_brand_oil" resultType="pokas.web.dto.CarDTO">
+		select * from smile_car where type = 1 and brand = #{brand} and oil_type=#{oil_type}
+	</select>
+	
+	<select id="c_search_rent_size_oil" resultType="pokas.web.dto.CarDTO">
+		select * from smile_car where type = 1 and size=#{size} and size=#{size}
+	</select>
+	
+	<select id="c_search_rent_oil" resultType="pokas.web.dto.CarDTO">
+		select * from smile_car where type = 1 and brand = #{brand} and size=#{size} and oil_type=#{oil_type}
+	</select>
+
+	<!-- 차량 검색 -->
+	<select id="c_search_auto" resultType="pokas.web.dto.CarDTO">
+		select * from smile_car where type = 2 and brand = #{brand}
+	</select>
+	
+	<select id="c_search_auto_by_size" resultType="pokas.web.dto.CarDTO">
+		select * from smile_car where type = 2 and size=#{size}
+	</select>
+	
+	<select id="c_search_auto_by_oil" resultType="pokas.web.dto.CarDTO">
+		select * from smile_car where type = 2 and oil_type=#{oil_type}
+	</select>
+	
+	<select id="c_search_auto_size" resultType="pokas.web.dto.CarDTO">
+		select * from smile_car where type = 2 and brand = #{brand} and size=#{size}
+	</select>
+	
+	<select id="c_search_auto_brand_oil" resultType="pokas.web.dto.CarDTO">
+		select * from smile_car where type = 2 and brand = #{brand} and oil_type=#{oil_type}
+	</select>
+	
+	<select id="c_search_auto_size_oil" resultType="pokas.web.dto.CarDTO">
+		select * from smile_car where type = 2 and size=#{size} and size=#{size}
+	</select>
+	
+	<select id="c_search_auto_oil" resultType="pokas.web.dto.CarDTO">
+		select * from smile_car where type = 2 and brand = #{brand} and size=#{size} and oil_type=#{oil_type}
+	</select>
+	
+	<update id="c_update" parameterType="pokas.web.dto.CarDTO">
+		update smile_car set type = #{type}, name = #{name}, price = #{price}, initcost = #{initcost}, size = #{size}, oil_rate = #{oil_rate}, oil_type = #{oil_type}, image = #{image}, brand = #{brand} where id = #{id}
+	</update>
+
+
+	<!-- 파일 삭제 -->
+	<delete id="c_delete">
+		delete from smile_car where id = #{id}
+	</delete>
+
+</mapper>

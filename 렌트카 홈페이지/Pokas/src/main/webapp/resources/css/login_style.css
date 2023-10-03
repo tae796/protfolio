@@ -1,0 +1,1268 @@
+/* -------------------------------------layout------------------------------------------- */
+
+html,body{
+    width:100%;
+}
+.container{
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.round-btn{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background-color: #ff0000;
+    border-radius: 50px;
+    padding: 15px;
+    width: 30%;
+    color: #fff;
+    border: none;
+    cursor: pointer; 
+} 
+.square-btn{ 
+    border-radius: 3px;
+    padding: 3px 30px;
+    margin-right: 5px;
+    border: 1px solid #999999;
+    background-color: #fff;
+    color: #999999;
+    margin-bottom: 30px;
+    cursor: pointer; 
+}
+.square-red-btn{ 
+    border-radius: 3px;
+    padding: 3px 30px;
+    margin-right: 5px; 
+    border: 1px solid #f9465c;
+    color: #f9465c;
+    margin-bottom: 30px;
+    cursor: pointer; 
+    background-color: #fff;
+}
+
+table{
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+table tr{
+    border-bottom: 1px solid #e7e7e7;
+}
+table tr:first-child{
+    background-color: #f8f8f8;
+    border-top:  2px solid #000; 
+}
+table tr:first-child td{
+    padding: 10px 5px;
+}
+table tr th{
+    padding: 10px 5px;
+}
+
+.page{
+    text-align: center; 
+    margin: 30px 0; 
+}
+.page a{ 
+    padding: 5px 10px;
+    color: #d1d1d1;
+    font-weight: bold;
+} 
+.page a:hover{
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px 10px; 
+}
+.hamburger{
+    display: none;
+    width: 10%;
+}
+.mobail{
+    display: none;
+}
+.mobail .nav-mobail{
+    display: none;
+}
+.bx-wrapper .bx-controls-direction .bx-prev, .bx-wrapper .bx-controls-direction .bx-next{
+    color: #5f5f5f60;
+}
+@media (max-width:1160px){ 
+    .bx-wrapper .bx-controls-direction .bx-prev{
+        margin-left: 100px; 
+    }
+    .bx-wrapper .bx-controls-direction .bx-next{
+        margin-right: 100px; 
+    } 
+}
+@media (max-width:1109px){
+    .container{
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+}
+@media (max-width:500px){
+    .bx-wrapper .bx-controls-direction .bx-prev{
+        margin-top: -50px;
+        margin-left: 60px; 
+    }
+    .bx-wrapper .bx-controls-direction .bx-next{
+        margin-top: -50px;
+        margin-right: 60px; 
+    } 
+}
+/* -----------------------------------------header----------------------------------------------- */ 
+
+header nav{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);    
+    clear: both; 
+    padding: 15px 0;
+    margin-bottom: 75px;
+}
+header nav h1, header nav p{
+    display: inline-block;
+}
+header nav h1{
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 20px;
+}
+header nav .nav-right{
+    float: right;
+    font-size: 14px;
+}
+header nav p span a{
+    margin-right: 10px;
+}
+
+/* ---------------------------------------------footer------------------------------------------- */ 
+
+footer{
+    font-size: 14px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+    padding: 15px;
+}
+footer h1{
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 20px;
+    margin-top: 15px;
+    display: inline-block;
+}
+footer h1 a{
+    color: rgba(0, 0, 0, 0.4);
+}
+
+footer .footer-style{
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-left: 0;
+}
+footer p{ 
+    margin-left: 160px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.5);
+}
+footer p a{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* --------------------------------- main ----------------------------------- */
+section .main-img{
+    /*margin-top: -75px;*/
+    position: relative;
+    margin-bottom: 50px;
+    height: 400px;
+    overflow: hidden;
+}
+section .main-img h1{
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+}
+section .main-img img{
+    width: 100%;
+    filter: brightness(80%);
+} 
+section .main-tite{
+    margin-bottom: 30px;
+}
+section .main-tite::after{
+    content: '';
+    display: block;
+    border-bottom: 2px solid #f9465c; 
+    width: 60px;
+    margin: 0 auto;
+    padding-top: 15px;
+} 
+section .main-slider{
+    margin-bottom: 30px;
+}
+section .story-imglist .main-viewer{
+    font-size: 14px;
+} 
+section .story-imglist .main-viewer img{
+    margin-left:55px;
+    display: inline-block;
+}
+.main-banner .bx-prev{
+    left:10px !important;
+}
+.main-banner .bx-next{
+    right:10px !important;
+
+}
+/* -----------------------------------------login--------------------------------------------- */ 
+
+section h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 26px;
+    margin-bottom: 75px;
+}
+section .login{
+    text-align: center;
+}
+section .login p{
+    margin-top: 25px;
+}
+section .login .account-text p{
+    margin-top: 5px;
+}
+section .login input{ 
+    display: block; 
+    padding: 8px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin : 0 auto;
+}
+section .login .input{
+    margin-bottom: 20px;    
+    width: 30%;
+    margin: 0 auto;
+    clear: both;
+}
+section .login .input input{
+    margin-bottom: 10px;
+}
+
+section .login .account{  
+    padding: 10px 0;
+    display: inline-block;
+    text-align: center;
+}
+section .login .account:after{
+    content: '';
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 350px;
+}
+section .login .account input{
+    display: inline-block;
+    width: 15px;
+    height: 15px; 
+}
+
+section .login .provision{ 
+    margin-left: 10%;
+}
+section .login .provision span, section .login .provision span a{
+    color: rgba(0, 0, 0, 0.4); 
+}
+
+
+.sns-login-btn-wrapper {  
+    display: flex; 
+}
+.sns-login-btn-wrapper .sns-btn-naver, 
+.sns-login-btn-wrapper .sns-btn-kakao{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sns-login-btn-wrapper .sns-btn-naver img,
+.sns-login-btn-wrapper .sns-btn-kakao img{
+    width: 70%;
+}
+.sns-login-btn-wrapper .sns-btn-naver {
+    background-color: #20c702;
+    margin: 0 10px;
+}
+.sns-login-btn-wrapper .sns-btn-kakao {
+    background-color: #f9e000;
+}
+
+.sns-login-btn-wrapper span{  
+    margin-top: 11px;
+}
+.sns-login-btn-wrapper .last{
+    margin-top: 11px;
+    margin-left: 30%;
+}
+@media (max-width:500px){
+    header nav h1 a{
+        vertical-align: super;
+    }
+    header nav h1{
+        display: flex;
+        justify-content: space-between;
+    }
+    footer p{
+        margin-left: 0;
+    }
+    .nav-right{
+        display: none;
+    }
+    section .login .input{
+        width: 80%;
+    }
+    .sns-login-btn-wrapper .last{
+        margin-left: 20%;
+    }
+    .sns-login-btn-wrapper{
+        padding: 0 15px;
+    }
+    .mobail{  
+        margin-top: 20px;
+        text-align: center;
+    }
+    .hamburger{
+        display:inline-block; 
+        cursor: pointer;
+    }
+    .text{
+        display: none;
+    }
+    .mobail.active{
+        display: block;
+    }
+    .mobail.active .nav-mobail{
+        display: block;
+    }
+}
+/* -------------------------------------------login_account--------------------------------------------- */ 
+
+section .login .account-text{
+    line-height: 20px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* -------------------------------------------my_page--------------------------------------------- */ 
+
+section .img{
+    text-align: center;
+    margin-bottom: 10px;
+}
+section .img img{
+    border-radius: 50%; 
+    margin-top: -20px;
+    margin-bottom: 20px;
+} 
+
+section .img p{
+    width: 31.5%;
+    margin: 0 auto;
+    text-align: right;
+    font-size: 12px;
+}
+section .img p:after{
+    content: '';
+    display: block;
+    width: 100%;
+    margin-left: 10px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+}
+section .input span{
+    color: #f9465c;
+}
+section .input label{
+    width: 100%;
+    display: inline-flex;
+    padding: 5px;
+}
+
+section .input .pw-change{
+    border-radius: 3px;
+    padding: 9px;
+    margin-right: 5px; 
+    margin-bottom:0;
+} 
+section .input .float{
+    float: left;
+    width: 110%;
+    margin-left: -10px;
+}
+section .input .float a{
+    float: right;
+}
+section .input .float input{
+    display: inline-block;
+    width: 56%;
+    margin-right: 10px;
+}
+section .round-btn{
+    margin-top: 25px;
+}
+
+section .img .btn .filebox{
+    text-align: center;
+}
+section .img .btn .filebox input:last-child{
+    padding: 5px 40px;
+}
+
+section .login .my, section .img .secession{
+    width: 350px;
+} 
+section .change.active .login .round-btn{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 50%;
+}
+section .change.active .change-content{
+    width: 500px;
+} 
+@media (max-width:500px){
+    section .change.active .change-content{
+        width: 90%;
+    }
+    
+}
+
+/* -------------------------------------------my_page popup------------------------------------------ */ 
+
+.change{
+    position: fixed;
+    left: 0; right: 0; top: 0; bottom: 0;
+    background: rgba(0,0,0,.5);
+    visibility: hidden;
+    opacity: 0; 
+}
+.change.active{
+    opacity: 1;
+    visibility: visible;
+} 
+ 
+.change.active .change-content{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    text-align: center; 
+    width: 30%;
+    transition: opacity 0.5s;
+}
+.change.active .chang-title{
+    border-bottom: 1px solid #e7e7e7;
+    margin-bottom: 20px;
+}
+.change.active .chang-title h2{
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 24px; 
+    font-weight: normal;
+}
+.change.active .chang-title span{
+    font-size: 45px;
+    float: right;
+    margin-right: 20px;
+    font-weight: lighter;
+    cursor: pointer;
+}
+.change.active .login label{
+    margin-left: 20px;
+} 
+.change.active .login .input{
+    width: 100%;
+}
+.change.active .login .input input{
+    margin-bottom:20px;
+    border-radius: 3px;
+    width: 85%;
+    padding: 10px;
+}
+.change.active  .login .round-btn{
+    margin: 20px 0 30px 0;
+}
+
+/* --------------------------------- sign_up ----------------------------------- */ 
+
+
+section .img .color{
+    color: #f9465c;
+}
+section .input .sign input{
+    width: 66%;
+    margin-right: 0;
+}
+section .input .sign button{
+    padding: 8px 25px;
+    margin-bottom: 0;
+}
+section .input .terms{
+    display: flex;
+    margin-top: 20px;
+}
+section .input .terms input{
+    width: 20px; height: 20px;
+    margin-top: 3px;
+}
+section .input textarea{
+    margin-bottom: 10px;
+    width: 100%; height: 190px; resize: none;
+}
+section .input .select{
+    display: flex;
+    width: 85%;
+}
+section .input .select label{
+    display: flex;
+}
+section .input .select input{ 
+    height: 20px;
+    width: 30%;
+    margin-right: 0px;
+}
+section .input .sign .sign-email{
+    text-align: left;
+    margin-bottom: 10px;
+}
+section .input .sign .sign-email .possible{
+    display: none;
+    margin-left: 10px;
+    color:rgb(59, 59, 59);
+} 
+section .input .sign .sign-email .impossible{
+    display: none;
+    margin-left: 10px;
+}
+section .login .sign-up{
+    width: 350px;
+}
+section .img .necessary{
+    width: 350px;
+} 
+/* --------------------------------- privacy_policy ----------------------------------- */ 
+
+section .privacy h2{
+    margin-bottom:0;
+}
+section .privacy h2:after{
+    content: '';
+    display: block;
+    width: 100%;
+    margin-left: 10px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 50px;
+}
+section .privacy p{
+    margin: 20px 10px;  
+}
+section .privacy .text-right {
+    float: right; 
+    margin: 0;
+}
+section .privacy .text-right .text-border{
+    border: none;
+}
+section .privacy .text-right::after{
+    content: none;
+}
+section .privacy p:after{
+    content: '';
+    display: block;
+    width: 100%; 
+    border-bottom: 1px solid rgb(218, 218, 218);
+    padding-bottom: 20px;
+} 
+section .privacy .blod{
+    font-weight: bold;
+    font-size: 20px;
+}
+section .privacy p span{
+    padding: 0 10px;
+}
+section .privacy p span:first-child{
+    border-right: 1px solid rgb(218, 218, 218);
+    padding-left: 0;
+}
+section .policy{
+    margin-left: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
+section .policy p{
+    line-height: 24px;
+    padding: 0 5px;
+}
+section .policy .blod{
+    font-weight: bold;
+    margin-top: 20px;
+}
+section .privacy .br{
+    display: inline;
+}
+@media (max-width:500px){
+    section .privacy .br{
+        display: block;
+        padding: 0;
+    }
+    section .privacy .text-right{
+        margin-top: 10px;
+    }
+    section .privacy p:nth-child(3):after{
+        padding-bottom: 35px;
+    }
+}
+/* --------------------------------- notice ----------------------------------- */ 
+.board{
+    width: 100%;
+}
+section .search{
+    text-align: right;
+    margin-top: -40px;
+    margin-bottom: -20px;
+}
+section .search .square-red-btn{
+    background-color: #f9465c;
+    color: #fff;
+    padding: 5px 30px;
+}
+section .search input{
+    height: 25px;
+    width: 25%;
+    border: 1px solid #ebebeb;
+}
+section .search select{
+    padding: 7px;
+    height: 30px;
+    width: 120px;
+    border: 1px solid #ebebeb;
+    color: #999999;
+}
+section .write-link{
+    text-align: right; 
+    margin-top: 20px;
+}
+section .write-link a{
+    margin-bottom: 0;
+    padding: 5px 30px; 
+    display: inline-block;
+}
+ 
+section .write-link a:hover{
+    background-color: #f9465c;
+    color: #fff;
+}
+
+@media (max-width:500px){
+    .board table tr th:nth-child(4),.board table tr th:nth-child(5){
+        display: none;
+    }
+    .board table tr td:nth-child(4),.board table tr td:nth-child(5){
+        display: none;
+    }
+    .board table tr th:nth-child(2){
+        width: 60%;
+    }
+    .board table tr td:nth-child(2){
+        width: 60%;
+    }
+}
+/* --------------------------------- notice_detail ----------------------------------- */ 
+.btn .lists{
+    padding: 3px 20px; 
+}
+/* --------------------------------- manuscript ----------------------------------- */ 
+
+section .manus table tr:first-child td{
+    text-align: right;
+    padding-right:5px;
+}
+section .btn{
+    text-align: right;
+}
+section .btn button{
+    background-color: #fff;
+    margin-bottom: 0;
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 5px 30px;
+}
+section .btn .square-red-btn{
+    margin-bottom: 0;
+    padding: 5px 30px;
+    margin-top: 20px;
+    display: inline-block;
+}
+section .btn .square-red-btn:hover{
+    background-color: #f9465c;
+    color: #fff;
+} 
+.search-mo{
+    
+    display: inline-block;
+}
+.search .search-mo input{
+    height: 25px;
+    width:55%;
+    border: 1px solid #ebebeb;  
+}
+@media (max-width:500px){
+    section .search{
+        text-align: center;
+    }
+    .search-mo{
+        display: block;
+        margin-top: 15px;
+    }
+    .manus table tr th:nth-child(2),.manus table tr th:nth-child(5),.manus table tr th:nth-child(6){
+        display: none;
+    }
+    .manus table tr th:nth-child(4){
+        display: block; 
+    } 
+    .manus table tr th:nth-child(3){
+        width: 70%;
+    }
+}
+/* --------------------------------- manuscript_detail ----------------------------------- */ 
+
+section .manus-detail p{
+    margin: 15px 0 30px 10px;
+}
+section .manus-detail p span{
+    color: #f9465c;
+}
+section .manus-detail .square-red-btn{
+    margin-left: 30px;
+    padding: 10px 20px;
+}
+section .manus-detail table tr th:first-child{
+    width: 5%;
+}
+section .manus-detail table tr th input{
+    width: 20px; height: 20px;
+}
+section .manus-detail table tr th:nth-child(2){
+    text-align: left;
+} 
+section .write-text .center .round-btn{
+    display: inline-block;
+    margin-right: 15px;
+}
+section .write-text .center .reset-btn{
+    background-color: #fff;
+    border: 1px solid #999999; 
+    color: #999999;
+}
+
+@media (max-width:740px){  
+    section .manus-detail p .manus-detail-bl{
+        display: block;
+        margin-top: 10px;
+    }
+}
+@media (max-width:500px){ 
+    section .manus-detail p {
+        margin: 10px 0 30px 10px;
+    }
+    section .manus-detail p span {
+        color: #f9465c; 
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    section .manus-detail .square-red-btn{
+        margin-left:0;
+    } 
+}
+
+/* --------------------------------- manuscript_write ----------------------------------- */ 
+
+section .manus-write p{
+    text-align: right;
+    color: #f9465c;
+    padding: 10px 0;
+}
+section .manus-write table{
+    text-align: left;
+}
+section .manus-write table tr th:nth-child(odd){
+    background-color: #f8f8f8;
+    width: 16%;
+    padding: 20px;
+    vertical-align: middle;
+    text-align: center;
+} 
+section .manus-write table tr:first-child{
+    background-color: #fff;
+}
+section .manus-write table tr th span{
+    color: #f9465c;
+}
+section .manus-write table tr th input{
+    border: 1px solid #ebebeb; 
+    border-radius: 3px;
+    padding: 10px;
+    margin-left: 10px;
+    width: 90%;
+}
+section .manus-write table tr .write-width input{
+    width: 37%;
+}
+
+
+section .manus-write table textarea{
+    margin-left: 10px;
+    padding: 10px;
+    width: 90%; height: 190px; resize: none;
+    border-color: #dbdbdb;
+} 
+section .manus-write table tr th input::placeholder{
+    color: #b1b1b1;
+} 
+section .manus-write table textarea::placeholder{
+    color: #b1b1b1;
+} 
+section .filebox .square-red-btn{
+    padding: 5px 30px;
+}
+section .filebox input[type="file"] {
+  display: none;
+}
+
+section .filebox button{
+    background-color: #fff;
+    margin-bottom: 0;
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 6px 32px;
+}
+section .write-text strong{
+    color: #f9465c;
+}
+section .write-text p{
+    line-height: 24px;
+    font-size: 14px;
+}
+section .write-text p:first-child{
+    margin: 10px 0;
+}
+section .write-text .round-btn{
+    width: 140px;
+    text-align: center;
+}
+section .write-text .center{
+    text-align: center;
+}
+section .write-text .center input{
+    margin-top: 35px;
+}
+.tow{
+    display: none;
+}
+
+@media (max-width:500px){
+    .one{
+        display: none;
+    }
+    .tow{
+        display: block;
+    }
+}
+
+/* --------------------------------- magazine ----------------------------------- */
+
+section .tab-list{
+    text-align: center;
+    margin: -25px 0 45px 0;
+}
+section .tab-list a{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 30px;
+    color: #999999;
+}
+section .tab-list a.active{
+    color: #000;
+}
+
+section .list-book{
+    display: flex;
+    margin-bottom: 50px;
+}
+section .list-book .tab-book{
+    margin-right: 60px;
+    width: 100%;
+}
+section .list-book .tab-book .tab-img img{
+    width: 100%;
+}
+section .list-book .tab-book .viewer{
+    margin-top: 0;
+}
+section .list-book .tab-book .viewer a{
+    font-size: 16px;
+}
+section .list-book .tab-book .viewer img{
+    margin-left:27px;
+}
+
+@media (max-width:800px){
+    section{
+        margin-top: -50px;
+    }
+    section .tab-list a{
+        margin: 0 10px;
+    }
+    section .list-book{
+        display: inline-block;
+        text-align: right;
+        margin-bottom: 0;
+    }
+    section .list-book .tab-book{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+}
+
+/* --------------------------------- maga-detail ----------------------------------- */
+
+section .book{
+    display: flex;
+} 
+section .book .book-img{
+    margin-right: 20px;
+}
+section .book .book-img img{
+    width: 100%;
+}
+section .book-text p{
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+section .viewer{
+    margin-top: 10px;
+}
+section .viewer a{
+    font-size: 20px;
+}
+section .viewer img{
+    margin-left: 100px;
+}
+section .viewer-read{
+    text-align: right;
+}
+section .viewer-read p{
+    margin-bottom: 10px;
+}
+section .maga-detail{
+    margin: 90px 0;
+}
+section .maga-detail h3, section .maga-detail-text h4{
+   font-size: 26px;
+   font-weight: bold;
+   padding-bottom: 10px;
+   border-bottom: 2px solid #000;
+}
+section .maga-detail-text{
+    margin: 35px 0;
+}
+section .maga-detail-text h4{
+    font-size: 20px;
+    border-bottom: 1px solid rgb(144, 144, 144);
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+}
+section .maga-detail-text p{
+    border-bottom: 1px solid rgb(240, 240, 240);
+    padding: 15px 0;
+}
+section .maga-detail-text p::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+section .maga-detail-text p a{
+    padding: 5px 25px;
+    float: right;
+}
+section .book .book-img .viewer .read{
+    width: 25px;
+    height: 25px;
+}
+@media (max-width:500px){
+    section .book{
+        display: block;
+    }
+    section .book .book-img{
+        margin: 0 15px;
+        margin-top: -30px;
+    }
+    section .book-text{
+        margin-top: 20px;
+    }
+    section .maga-detail-text p{
+        padding: 0;
+        padding-top: 15px;
+    }
+    section .maga-detail-text p a{
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    section .viewer img{
+        margin-left: 15px;
+    }
+}
+/* --------------------------------- story ----------------------------------- */
+
+section .story-select{
+    margin: -40px 0 60px 0;
+    text-align: center;
+}
+section .story-select select{
+    width: 50%;
+    padding:10px;
+    border: 1px solid #cfcfcf;
+    /* font-family: inherit; */
+    color: #999999;
+    background: url('img/arrow-1.jpg') no-repeat 97% 50%;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+section .story-select select::-ms-expand {
+    display: none;
+} 
+section .story-list{
+    margin: -25px 0 65px 0;
+}
+section .list-book .story-imglist{
+    margin-right: 20px;
+}
+section .list-book .story-imglist{
+    width: 100%;
+}
+section .list-book .story-imglist .story-img img, section .list-book .story-imglist .story-img p{
+    width: 100%;
+} 
+section .list-book .story-imglist .story-text p:first-child{
+    color: #f9465c;
+    margin: 10px 0;
+}
+section .list-book .story-imglist .story-text p{
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    display: -webkit-box;  
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.story-list .story-bottom{
+    display: inline;
+}
+
+@media (max-width:944px){
+    .story-list .story-bottom{
+        display: inline-block;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width:500px){
+    section .story-select select{
+        width: 80%;
+    }    
+    section .story-list span:nth-child(1){
+        margin-right: 48px;
+    }
+    section .story-list span:nth-child(3){
+        display: block;
+        margin-top: 30px;
+    }
+    .story-list .story-bottom{
+        margin-top: 30px;
+    }
+    .story-list .story-bottom span:nth-child(1){ 
+        display: block;
+        margin-right: 0;
+    }
+    .story-list .story-bottom span:nth-child(2){
+        margin-top: 30px;
+        display: block;
+    }
+    section .story-imglist .story-text{
+        text-align: center;
+        margin-bottom: 15px;
+    } 
+}
+/* --------------------------------- story-detail ----------------------------------- */
+
+section .story-title{
+    margin-top: -50px;
+    margin-bottom: 20px;
+}
+section .story-title h2{
+    text-align: left;
+    border-bottom: 1px solid;
+    padding-bottom: 20px;
+    line-height: 30px;
+}
+section .story-title .blod{
+    font-weight: bold;
+    margin-top: -50px;
+    margin-bottom: 15px;
+}
+section .story-title p span{
+    margin-right:10px;
+}
+section .story-title p span:first-child{
+    border-right: 1px solid rgba(0, 0, 0, 0.4);
+    padding-right: 10px;
+} 
+section .story-detail-img img{
+    width: 100%;
+    height: 500px;
+}
+section .story-detail-img .story-text{
+    line-height: 24px;
+    margin : 30px 0; 
+} 
+section .story-detail-img .story-sns img{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+section .story-detail-img .story-link{
+    text-align: right;
+    margin-top: -30px;
+}
+section .story-detail-img .story-link a{
+    padding: 5px 25px;
+}
+section .story-detail-img .story-link button{
+    padding: 8px 50px;
+}
+section .story-detail-img .story-link button i{
+    margin-right: -40px;
+    margin-left: 30px;
+} 
+section .story-reco{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0;
+    border-bottom: 1px solid;
+    margin-bottom: 20px;
+} 
+.bx-wrapper{
+    box-shadow: none;
+} 
+.bx-wrapper .bx-prev, .bx-wrapper .bx-next{
+    color: #e8e8e8;
+    background: none;
+    font-size: 30px;
+}
+.bx-wrapper .bx-prev:hover, .bx-wrapper .bx-next:hover{
+    color: #6d6d6d;
+} 
+.bx-wrapper .bx-prev{
+    left: -45px;
+}
+.bx-wrapper .bx-next{
+    right: -45px; 
+}
+.bx-wrapper .bx-controls-direction a{
+    text-indent: 0; 
+} 
+
+
+@media (max-width:550px){
+    section .story-detail-img .story-link{
+        margin-top: 10px;
+        text-align: center;
+    }
+    section .story-detail-img .story-sns{
+        text-align: center;
+    }
+}
+
+/* --------------------------------- email-login ----------------------------------- */
+
+.header{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 30px 0;
+}
+section .border{
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+    border-radius: 5px;
+}
+section .border .border-text{ 
+    padding: 40px 40px 0 40px;
+}
+section .border h2{
+    margin-bottom: 20px;
+    text-align: center;
+}
+section .border table{ 
+    margin-top: 20px;
+    margin-bottom: 10px; 
+}
+section .border table tr th{
+    text-align: left;
+    padding: 20px;
+}
+section .border table tr th:first-child{ 
+    width: 30%;
+}
+section .border table tr th:last-child{
+    background-color: #fff;
+}
+section .border-red{
+    color: #f9465c;
+}
+section .border-link{
+    text-align: center;
+}
+section .border-link .round-btn{
+    width: 20%;
+    margin-bottom: 30px;
+}
+section .border p{
+    line-height: 24px;
+}
+
+section .border .footer{
+    margin-top: 40px;
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    color: #999999;
+}
+
+@media (max-width:500px){
+    .header{
+        margin-bottom: 70px;
+    }
+}

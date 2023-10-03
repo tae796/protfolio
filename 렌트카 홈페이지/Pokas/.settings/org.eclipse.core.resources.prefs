@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+encoding//src/main/java/pokas/web/controller/CommunityController.java=UTF-8
+encoding//src/main/java/pokas/web/controller/CompanyController.java=UTF-8
+encoding//src/main/java/pokas/web/controller/CompareController.java=UTF-8
+encoding//src/main/java/pokas/web/controller/PromotionController.java=UTF-8
+encoding//src/main/java/pokas/web/controller/RequestController.java=UTF-8
+encoding//src/main/java/pokas/web/controller/SearchController.java=UTF-8
+encoding//src/main/java/pokas/web/dao/CarDAO.java=UTF-8
+encoding//src/main/java/pokas/web/dao/RequestDAO.java=UTF-8
+encoding//src/main/java/pokas/web/service/CarService.java=UTF-8
+encoding//src/main/java/pokas/web/service/RequestService.java=UTF-8
+encoding//src/main/webapp/WEB-INF/views/file_uploader_html5.jsp=UTF-8

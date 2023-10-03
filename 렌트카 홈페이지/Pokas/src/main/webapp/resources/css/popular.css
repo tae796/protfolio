@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+body{background-color: #eee;}
+.searchbox .search-title{background-color: #fff;}
+.searchbox ul .searchbox-list .rbox{background-color: #fff;}
+footer{background-color: #fff;}
+footer .bottom{background-color: #fff;}
+
+/* 장기렌트 */
+
+#main{background-color: #eee;}
+
+/* title */
+
+#title{width: 100%; height: 200px; padding: 50px 0; background-color:#eee;}
+#title .cont{width: 100%; height: 100%; background-color: #e6371e;}
+#title .cont .title{max-width: 1300px; margin: 0 auto; text-align: center;}
+#title .cont .title h2{color: #fff; font-size: 35px; line-height: 100px; font-weight: normal;}
+
+/* best */
+
+#best{width: 100%; height: 400px; padding-bottom: 50px; background-color: #eee;}
+#best .cont{max-width: 1300px; height: 100%; margin: 0 auto; padding: 0 30px; display: flex;}
+#best .cont .box{width: calc(100% / 3 - 5.5px); text-align: center; height: 100%; background-color: #fff; border-radius: 20px; padding: 20px; margin: 0 5px; cursor: pointer;}
+
+#best .cont .box .img{width: 100%; height: 60%; background-size: contain; background-repeat: no-repeat; background-position: 50% 50%;}
+#best .cont .box h2{font-size: 28px; font-weight: bold; margin: 5% 0;}
+#best .cont .box p{font-size: 28px; color: #e6371e; font-weight: bold;}
+#best .cont .box p span{font-size: 18px; color: #000;}
+
+#best .cont .box:hover{border: 1px solid #e6371e; }
+
+/* car cont */
+
+#car{width: 100%; height: auto; background-color: #eee; padding-bottom: 55px;}
+#car .cont{max-width: 1300px; margin: 0 auto;  padding: 0 30px;}
+
+#car .cont .title{width: 100%; height: 60px; border-bottom: 2px solid #e6371e; padding-bottom: 15px;}
+#car .cont .title h1{font-size: 25px; font-weight: bold; color: #e6371e;}
+  
+/* car box */
+
+#car .cont .box{width: 100%; height: 320px; display: flex; background-color: #fff; margin-top: 30px; }
+
+/* car left */
+
+#car .cont .box .left_part{width: calc(100% / 6 * 2); height: 100%; }
+#car .cont .box .left_part .img {width: 100%; height: 100%; background-size: contain;  background-repeat: no-repeat; background-position: 50% 50%;}
+
+/* car right */
+
+#car .cont .box .right_part{width: calc(100% / 6 * 4); padding: 10px 0;}
+#car .cont .box .right_part .top{width: 100%; height: 48px; color: #fff; background: linear-gradient(to right, #e6381e, #ff9f4b); padding-left: 18px; margin-bottom: 10px; }
+#car .cont .box .right_part .top h1{font-size: 22px; line-height: 48px;}
+
+/* car right middle */
+
+#car .cont .box .right_part .middle{width: 100%; border-top: 1px solid #999; border-bottom: 1px solid #999; padding: 10px;} 
+
+#car .cont .box .right_part .middle h2{font-size: 20px; font-weight: bold; display: flex; align-items: center; margin-bottom: 10px;}
+#car .cont .box .right_part .middle h2 > div{width: 4px; height: 23px; background-color: #e6371e; margin: 0 5px;}
+#car .cont .box .right_part .middle h2 > span{font-size: 23px; font-weight: bold;}
+
+#car .cont .box .right_part .middle table{width: 100%;}
+
+#car .cont .box .right_part .middle table tr td{height: 25px; font-size: 15px;}
+#car .cont .box .right_part .middle table tr td:nth-child(2n-1){width: 95px; font-weight: bold;}
+
+#car .cont .box .right_part .bottom{ display: flex; justify-content: space-between; padding: 10px 10px 0 10px;}
+
+#car .cont .box .right_part .bottom .money{display: flex;}
+#car .cont .box .right_part .bottom .money h2{font-size: 15px; color: #989898; line-height: 55px;}
+#car .cont .box .right_part .bottom .money span{color: #e6371e; font-size: 28px; margin-left: 25px; line-height: 55px; font-weight: bold;}
+
+#car .cont .box .right_part .bottom button{width: 120px; height: 55px; background-image :linear-gradient(to right, #999, #999); border: none; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); }
+#car .cont .box .right_part .bottom button a{display: block;}
+#car .cont .box .right_part .bottom button a h2{font-size: 15px; color: #fff; font-weight: normal; letter-spacing: 5px;}
+
+#car .cont .box .right_part .bottom button:hover{background-image: linear-gradient(to right, #e6381e, #ff9f4b);} 
+
+/* 페이지 버튼 */
+#car .cont_button{width: 180px; height: 30px; margin: 65px auto 0; display: flex; text-align: center;  } 
+#car .cont_button button{width: 32px; height: 30px; margin-left: 5px; border: 1px solid #d4d4d4; background-color: #fff; cursor: pointer; } 
+#car .cont_button button a{display: block; font-size: 16px; font-weight: bold; color: #000;}
+#car .cont_button button:nth-child(1){background-image: url(../img/user_img/the_last.svg); background-position: 50% 50%; background-size: contain; background-repeat: no-repeat; transform: scaleX(-1);}
+#car .cont_button button:nth-child(2n){background-image: url(../img/user_img/the_next.svg); background-position: 50% 50%; background-size: contain; background-repeat: no-repeat;}
+#car .cont_button button:nth-child(5){background-image: url(../img/user_img/the_last.svg); background-position: 50% 50%; background-size: contain; background-repeat: no-repeat;}
+#car .cont_button button:nth-child(1){transform: scaleX(-1);}
+#car .cont_button button:nth-child(2){transform: scaleX(-1);}
+
+
+/* 모바일 */
+@media (max-width:1024px){
+    #title{padding-top: 0;}
+
+    #best .cont{padding: 0 10px;}
+    #car .cont{padding: 0 10px;}
+}
+
+@media (max-width:850px){
+    #best .cont .box{width: calc(100% / 2 - 5.5px); transition: 0.5s;}
+    #best .cont .box:last-child{display: none;}
+    
+    #car .cont .box{height: auto; display: block; padding: 10px; transition: 0.5s;}
+    #car .cont .box .left_part{width: 100%;height: 200px;}
+    #car .cont .box .left_part .img{width: 100%;    height: 100%; margin-top: 50px; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;}
+    #car .cont .box .right_part{width: 100%;}
+
+  
+    #car .cont_button button{width: 30px; height: 30px;}
+    #car .cont_button button a{font-size: 12px;}
+
+}
+
+@media (max-width:520px){
+    #best .cont .box{width: calc(100% - 5.5px); transition: 0.5s;}
+    #best .cont .box:nth-child(2){display: none;}
+
+    #car .cont .box .right_part .middle h2{font-size: 15px;}
+    #car .cont .box .right_part .middle h2 > div{height: 18px;}
+    #car .cont .box .right_part .middle h2 > span{font-size: 15px;}
+
+  
+
+}
+
+@media (max-width:460px){
+    #car .cont .box .right_part .middle table tr td{font-size: 13px;}
+}
+@media (max-width:400px){
+    #car .cont .box .right_part .middle{padding: 10px 0;}
+    #car .cont .box .right_part .middle table tr td{font-size: 13px;}
+
+    #car .cont .box .right_part .bottom .money span{font-size: 20px;}
+    #car .cont .box .right_part .bottom{padding: 10px 0;}
+    
+}
+
+@media (max-width:350px){
+    #car .cont .box .right_part .bottom button{width: 100px; transition: 0.5s;}
+}
+
+/* main 모바일 */
+@media (max-width:1024px){
+    #main{background-size: 1000px; height: 395px;  padding: 69px 0 0;}
+    #main .bg{height: 325px;}
+    #main .title h3{font-size: 50px;}
+    #main .title p{font-size: 12px;}
+}
+
+@media (max-width:600px){
+    #main{background-size: 580px; height: 395px;}
+    #main .bg{height: 325px;}
+}
+
+@media (max-width:380px){
+    #main{background-size: 600px;}
+    #main .title h3{font-size: 38px;}
+    #main .title p{font-size: 10px;}
+}
+
+

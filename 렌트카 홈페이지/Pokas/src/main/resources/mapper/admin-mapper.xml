@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="admin">
+
+	<!-- 관리자 로그인 -->
+	<select id="admin_login" resultType="pokas.web.dto.AdminDTO">
+		select * from smile_admin where userid = #{userid} and password = #{password} and del_yn='N'
+	</select>	
+	
+	<select id="get_one" resultType="pokas.web.dto.AdminDTO">
+		select * from smile_admin where id = #{id} and del_yn='N'
+	</select>	
+	
+	<select id="get_center" resultType="String">
+		select center from smile_admin where userid = #{userid} and del_yn='N'
+	</select>
+	
+	<select id="get_team" resultType="String">
+		select team from smile_admin where userid = #{userid} and del_yn='N'
+	</select>
+	
+	<select id="get_name" resultType="String">
+		select team from smile_admin where name = #{name} and del_yn='N'
+	</select>
+		
+	<select id="get_admin_list" resultType="pokas.web.dto.AdminDTO">
+		select * from smile_admin where del_yn='N'
+	</select>	
+	
+	<update id="admin_update" parameterType="pokas.web.dto.AdminDTO">
+		update smile_admin set password = #{password}, center=#{center}, team=#{team}, grade=#{grade} where id = #{id}
+	</update>
+	
+	
+	
+	<insert id="admin_insert">
+		insert into smile_admin values (null,#{userid},#{password},'member',#{center},#{team},#{name},#{image},"N")
+	</insert>
+	
+	<delete id="admin_delete">
+		delete from smile_admin where id = #{id}
+	</delete>
+
+	
+</mapper>

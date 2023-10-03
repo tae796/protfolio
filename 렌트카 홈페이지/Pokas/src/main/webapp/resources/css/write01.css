@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+/* 견적문의 */
+
+#main{width: 100%; height: 520px; background-color: #fff; background-image: url(../img/img/keyboard-338507_1920.jpg); background-size: cover; background-position: 50% 10%; position: relative; padding: 180px 0 0; }
+#main .bg{width: 100%; height: 340px; background-color: rgba(0,0,0,0.4);}
+#main .title{width: 100%; height: auto;  padding-top: 110px;  display: table-cell; vertical-align: middle; text-align: center; position: absolute;}
+#main .title h3{color: #fff; font-size: 80px; letter-spacing: 20px; font-weight: normal;}
+#main .title p{color: #e6c7ca; font-size: 14px; margin-top: 10px; letter-spacing: 8px;}
+
+/* table */
+
+#table{width: 100%; height: auto;}
+#table .cont{max-width: 1300px; padding: 100px 30px ; margin: 0 auto;}
+#table .cont table{width: 100%; border-top: 2px solid #000; border-collapse: collapse;}
+#table .cont table tr td{height: 63px; border-bottom: 1px solid #c2c2c2; font-size: 15px; font-weight: bold; padding-left: 25px;}
+#table .cont table tr .name{width: calc(100% / 8);}
+#table .cont table tr:first-child input{margin-left: 20px; letter-spacing: 3px;}
+
+#table .cont table tr .cont_01{margin-left: -20px;}
+
+#table .cont table tr input{outline: none;}
+#table .cont table tr select{width: 200px; padding: 10px 15px;border: 1px solid #989898; background: url('../img/user_img/arrow.svg') no-repeat 26% 50%;  -webkit-appearance: none;-moz-appearance: none; appearance: none;font-size: 13px; color: #6b6b6b;}
+#table .cont table tr select::-ms-expand {display: none;}   
+
+#table .cont table tr .cont_04 input{width: 150px; height: 40px; border: 1px solid #989898;}
+#table .cont table tr .cont_05 input{width: 150px; height: 40px; border: 1px solid #989898;}
+
+#table .cont table tr .cont_07 input{width: 100%; height: 125px; border: 1px solid #989898; margin-left: 25px;}
+#table .cont table tr .cont_07 {width: 100%; height: 100%;  padding: 18px 30px 18px 0;} 
+
+#table .cont button{margin: 57px 25% 0; width: 54%; height: 100px; border: none; background: linear-gradient(to right,#e6371e, #ff9f4b); }
+#table .cont button a{display: block; color: #fff; font-size: 35px;  letter-spacing: 8px;}
+#table .cont button a h2{font-weight: normal;}
+
+/* 반응형 */
+@media (max-width:658px){
+    #table .cont{padding: 100px 0;}
+    #table .cont table tr td{font-size: 13px;}
+    #table .cont table tr .cont_04 form input{width: 80px; transition: 0.5s;}
+
+    #table .cont button{width: 48%; height: 80px; transition: 0.5s;}
+    #table .cont button a{font-size: 25px;}
+}
+
+@media (max-width:500px){
+    #table .cont table tr .name{width: calc(100% / 5);}
+    #table .cont table tr select{width: 100px; transition: 0.5s;}
+    #table .cont table tr .cont_05 form input{width: 100px; transition: 0.5s;}
+    #table .cont table tr td{padding-left: 5px;}
+
+    #table .cont button{width: 54%;transition: 0.5s;}
+    #table .cont button a{font-size: 18px;}
+}
+
+@media (max-width:350px){
+    #table .cont table tr .cont_04 form input{width: 60px; transition: 0.5s;}
+    #table .cont button{width: 54%; height: 60px; transition: 0.5s;}
+    #table .cont button a{font-size: 15px;}
+}
+
+
+/* main 모바일 */
+@media (max-width:1024px){
+    #main{background-size: 1000px; height: 395px;  padding: 69px 0 0;}
+    #main .bg{height: 325px;}
+    #main .title h3{font-size: 50px; letter-spacing: 10px;}
+    #main .title p{font-size: 12px;}
+}
+
+@media (max-width:600px){
+   
+
+    #main{background-size: 800px; height: 395px;}
+    #main .bg{height: 325px;}
+    #main .title h3{font-size: 38px;}
+    #main .title p{font-size: 10px;}
+}
+
+@media (max-width:428px){
+    #main .title h3{font-size: 28px;}
+    #main .title p{font-size: 8px;}
+}
+
+@media (max-width:380px){
+    #main{background-size: 600px;}
+    #main .title h3{font-size: 25px;}
+    #main .title p{font-size: 8px;}
+}

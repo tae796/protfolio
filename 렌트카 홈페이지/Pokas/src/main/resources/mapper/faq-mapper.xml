@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="faq">
+
+	<!-- 차 업로드 -->
+	<insert id="faq_insert" parameterType="pokas.web.dto.FaqDTO">
+		insert into smile_faq values (null,#{title}, #{text})
+	</insert>
+	
+	<select id="faq_select_all" resultType="pokas.web.dto.FaqDTO">
+		select * from smile_faq order by id desc
+	</select>
+
+	<select id="faq_select_one" resultType="pokas.web.dto.FaqDTO">
+		select * from smile_faq where id = #{id}
+	</select>	
+	
+	<update id="faq_update" parameterType="pokas.web.dto.FaqDTO">
+		update smile_faq set title=#{title}, text=#{text} where id = #{id}
+	</update>
+	
+
+	<!-- 파일 삭제 -->
+	<delete id="faq_delete">
+		delete from smile_faq where id = #{id}
+	</delete>
+
+</mapper>

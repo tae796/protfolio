@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+/* 자주 묻는 질문 */
+
+
+/* faq */
+#faq{width: 100%; height: 100%;  }
+#faq .cont{max-width: 1300px; height: auto; margin: 0 auto;}
+
+#faq .cont ul{border-top: 1px solid #000; width: 100%;}
+#faq .cont > ul > li{border-bottom: 1px solid #ddd; height: auto; width: 100%; height: 100%; display: block; }
+#faq .cont > ul > li >h3{width: 80%; font-size: 22px; line-height: 48px; display: inline-block; vertical-align: top; padding: 20px; word-break: keep-all; }
+
+#faq .cont > ul > li > div{width: 26px; height: 26px; background-image: url(../img/user_img/down_01.svg); background-size: cover; background-position: 50% 50%;  margin-top: 10px; cursor: pointer; float: right; margin-right: 20px; display: block;}
+
+#faq .cont > ul > li > ul{width: 100%;  border-top: 1px solid #ddd; display: none;}
+#faq .cont > ul > li > ul > li{width: 100%;  background-color: #eee; padding: 20px;}
+#faq .cont > ul > li > ul > li h2{width: 100%; line-height: 2.5;}
+#faq .cont > ul > li > ul > li p{width: 100%; line-height: 2.5;}
+#faq .cont > ul > li > ul > li .logo{width: 20%; height: 150px; background-image: url(../img/img/logo.png); background-size: contain; background-position: 50% 50%; background-repeat: no-repeat;}
+
+#faq .cont_button{width: 180px; height: 30px; margin: 20px auto 50px; display: flex; text-align: center;  } 
+#faq .cont_button button{width: 32px; height: 30px; margin-left: 5px; border: 1px solid #d4d4d4; background-color: #fff; cursor: pointer; } 
+#faq .cont_button button a{display: block; font-size: 16px; font-weight: bold; color: #000;}
+#faq .cont_button button:nth-child(1){background-image: url(../img/user_img/the_last.svg); background-position: 50% 50%; background-size: contain; background-repeat: no-repeat; transform: scaleX(-1);}
+#faq .cont_button button:nth-child(2n){background-image: url(../img/user_img/the_next.svg); background-position: 50% 50%; background-size: contain; background-repeat: no-repeat;}
+#faq .cont_button button:nth-child(5){background-image: url(../img/user_img/the_last.svg); background-position: 50% 50%; background-size: contain; background-repeat: no-repeat;}
+#faq .cont_button button:nth-child(1){transform: scaleX(-1);}
+#faq .cont_button button:nth-child(2){transform: scaleX(-1);}
+
+
+@media (max-width:1300px){
+    
+}
+
+@media (max-width:1024px){
+    #faq .cont > ul > li >h3{font-size: 14px;}
+    #faq .cont > ul > li > ul > li h2{font-size: 14px;}
+    #faq .cont > ul > li > ul > li p{font-size: 14px;}
+    #faq .cont > ul > li > ul > li .logo{background-size: contain; width: 50%;}
+}
+
+@media (max-width:850px){
+
+
+    #faq .cont_button{margin: 0 auto 50px;}
+    #faq .cont_button button{width: 30px; height: 30px;}
+    #faq .cont_button button a{font-size: 12px;}
+
+}
+
+@media (max-width:520px){
+
+
+    #faq .cont_button{ margin: 0 auto 50px;}
+
+}
+
+@media (max-width:460px){
+    #faq .cont .box .right_part .middle table tr td{font-size: 13px;}
+}
+@media (max-width:400px){
+    #faq .cont .box .right_part .middle{padding: 10px 0;}
+    #faq .cont .box .right_part .middle table tr td{font-size: 13px;}
+
+    #faq .cont .box .right_part .bottom .money span{font-size: 20px;}
+    #faq .cont .box .right_part .bottom{padding: 10px 0;}
+    
+}
+
+@media (max-width:350px){
+    #faq .cont .box .right_part .bottom button{width: 100px; transition: 0.5s;}
+}
+
+
+
+
+/* main 모바일 */
+@media (max-width:1024px){
+    #main{background-size: 1000px; height: 395px;  padding: 69px 0 0;}
+    #main .bg{height: 325px;}
+    #main .title h3{font-size: 50px; letter-spacing: 10px;}
+    #main .title p{font-size: 12px;}
+}
+
+@media (max-width:600px){
+   
+
+    #main{background-size: 800px; height: 395px;}
+    #main .bg{height: 325px;}
+    #main .title h3{font-size: 38px;}
+    #main .title p{font-size: 10px;}
+}
+
+@media (max-width:428px){
+    #main .title h3{font-size: 28px;}
+    #main .title p{font-size: 8px;}
+}
+
+@media (max-width:380px){
+    #main{background-size: 600px;}
+    #main .title h3{font-size: 25px;}
+    #main .title p{font-size: 8px;}
+}
+

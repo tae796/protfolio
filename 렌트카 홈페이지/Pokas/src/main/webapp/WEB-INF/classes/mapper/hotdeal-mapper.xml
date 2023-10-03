@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="hotdeal">
+
+	<!-- 이달의핫딜 작성 -->
+	<insert id="hot_insert" parameterType="pokas.web.dto.HotdealDTO">
+		insert into smile_hotdeal values(null, #{name},#{product_type},#{grade},#{oil_type},#{cc},#{oil_rate},#{agreement_dist},#{guarantee},#{option},#{months},#{price},#{start_ddt},#{end_ddt},#{image})
+	</insert>
+	
+	<select id="c_selectcount" resultType="int">
+		select count(*) from smile_hotdeal
+	</select>
+
+	<update id="hot_update" parameterType="pokas.web.dto.HotdealDTO">
+		update smile_hotdeal set name = #{name}, product_type = #{product_type}, grade = #{grade}, oil_type = #{oil_type}, cc = #{cc}, oil_rate = #{oil_rate}, agreement_dist = #{agreement_dist}, guarantee = #{guarantee}, option = #{option}, months = #{months},price = #{price}, start_ddt = #{start_ddt}, end_ddt= #{end_ddt} where id = #{id}
+	</update>
+
+	<!-- 이달의 핫딜 보기 -->
+	<select id="hot_all" resultType="pokas.web.dto.HotdealDTO">
+		select * from smile_hotdeal order by id desc limit #{start},#{end}
+	</select>
+	
+	<select id="hot_all1" resultType="pokas.web.dto.HotdealDTO">
+		select * from smile_hotdeal order by id desc
+	</select>
+
+
+	<select id="hot_one" resultType="pokas.web.dto.HotdealDTO">
+		select * from smile_hotdeal where id =#{id}
+	</select>
+
+
+	<!-- 이달의 핫딜 삭제 -->
+	<delete id="hot_delete">
+		delete from smile_hotdeal where id=#{id}
+	</delete>
+	
+
+	
+	
+</mapper>

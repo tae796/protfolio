@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+/* 진행절차 */
+
+
+
+/* method */
+#method{width: 100%; height: auto; padding-top: 40px;}
+#method .cont{max-width: 1300px; margin: 0 auto; padding: 0 10px;}
+#method .cont .title{text-align: center; }
+#method .cont .title h3{font-size: 40px; letter-spacing: 10px; font-weight: normal; margin-bottom: 50px;}
+#method .cont .title h3 span{color: #e6371e; font-size: 50px; letter-spacing: 10px; word-break: keep-all; }
+#method .cont .title p{font-size: 30px; margin-bottom: 20px;}
+
+#method .cont .icon{width: 100%; display: flex; justify-content: space-between; align-items: center; margin-top: 50px; margin-bottom: 80px;}
+#method .cont .icon .icon_img{width: calc(100% / 3 - 10px); text-align: center;}
+#method .cont .icon .icon_img .img{width: 40%; height: 140px; background-size: 100px; background-position: 50% 50%; background-repeat: no-repeat; margin: 0 auto;}
+#method .cont .icon .icon_img h2{margin-bottom: 40px; font-size: 40px; color: #e6371e;}
+#method .cont .icon .icon_img p{font-size: 30px;}
+
+
+#method .cont .icon .icon_img:nth-child(1) .img{background-image: url(../img/user_img/brand.png);}
+#method .cont .icon .icon_img:nth-child(2) .img{background-image: url(../img/user_img/car.png);}
+#method .cont .icon .icon_img:nth-child(3) .img{background-image: url(../img/user_img/oil.png);}
+
+/* nonstop */
+#nonstop{width: 100%; height: auto; background-image: url(../img/img/park-4375072_1920.jpg); background-size: cover; background-position: 50% 50%; box-shadow: 0px 0px 5px rgba(0,0,0,0.2);}
+#nonstop .bg{width: 100%; height: 100%; background-color: rgba(255,255,255,0.6);}
+#nonstop .bg .cont{max-width: 1300px; height: 100%;  padding: 40px 50px;margin: 0 auto;}
+#nonstop .bg .cont .cont_line{width: 100%; height: 100%; border: 2px solid #e6371e; border-radius: 20px; padding: 30px 0 100px 20px; }
+#nonstop .bg .cont .cont_line .title{text-align: center;}
+#nonstop .bg .cont .cont_line .title h2{font-size: 30px; letter-spacing: 5px; text-shadow: 0 0 2px rgba(0,0,0,0.3);}
+#nonstop .bg .cont .cont_line .title h1{font-size: 50px; color: #e6371e; letter-spacing: 10px; font-weight: bold; margin-bottom: 50px; text-shadow: 0 0 2px rgba(0,0,0,0.2);}
+#nonstop .bg .cont .cont_line .icon{width: 100%; display: flex;}
+#nonstop .bg .cont .cont_line .icon .icon_img{width: calc(100% / 6); display: flex; align-items: center; }
+#nonstop .bg .cont .cont_line .icon .icon_img .box{width: 80%; height: 250px; text-align: center;}
+#nonstop .bg .cont .cont_line .icon .icon_img .box .img{width: 100%; height: 130px; background-size: 100px; background-position: 50% 50%; background-repeat: no-repeat; margin: 0 auto;}
+#nonstop .bg .cont .cont_line .icon .icon_img .box h2{margin-bottom: 20px; font-size: 37px; color: #e6371e; word-break: keep-all; line-height: 1.2; text-shadow: 0 0 2px rgba(0,0,0,0.2);}
+#nonstop .bg .cont .cont_line .icon .icon_img .box p{width: 100%; font-size: 18px; word-break: keep-all; text-shadow: 0 0 2px rgba(0,0,0,0.2);}
+#nonstop .bg .cont .cont_line .icon .icon_img .arrow{background-image: url(../img/user_img/2203515_media_music_play_triangle_icon.svg); width: 25px; height: 30px; background-size: cover; background-position: 50% 50%; }
+#nonstop .bg .cont .cont_line .icon .icon_img:last-child .arrow{display: none;}
+
+@media (max-width:1640px){
+    #nonstop .bg .cont .cont_line .icon{width: 100%; height: 200%; margin: 0 auto;}
+    #nonstop .bg .cont .cont_line .icon .icon_img{width: calc(100% / 3 - 5px); height: 320px; float: right;}
+    #nonstop .bg .cont .cont_line .icon .icon_img .box{}
+}
+
+@media (max-width:1150px){
+    #method .cont .title h3 span{font-size: 65px; }
+    #method .cont .title h3{font-size: 45px; letter-spacing: 5px;}
+    #method .cont .title p{font-size: 25px;}
+    #method .cont .icon .icon_img p{font-size: 18px;}
+    #method .cont .icon .icon_img .img{width: 100%;}
+
+    #nonstop .bg .cont .cont_line .icon{flex-wrap: wrap; transition: 0.5s;}
+}
+@media (max-width:1024px){
+    #method{padding-top: 0;}
+}
+
+@media (max-width:780px){
+    #method .cont .title h3 span{font-size: 45px;}
+    #method .cont .title h3{font-size: 30px; letter-spacing: 0px;}
+    #method .cont .title p{font-size: 22px;}
+    #method .cont .icon .icon_img p{font-size: 15px;}
+    #method .cont .icon .icon_img h2{font-size: 28px;}
+
+    #nonstop .bg .cont .cont_line .title h2{font-size: 38px;}
+    #nonstop .bg .cont .cont_line .title h1{font-size: 45px;}
+
+    #nonstop .bg .cont .cont_line .icon .icon_img .box h2{font-size: 28px;}
+    #nonstop .bg .cont .cont_line .icon .icon_img .box p{font-size: 15px;}
+    #nonstop .bg .cont .cont_line .icon .icon_img .arrow{width: 18px; height: 25px;}
+}
+
+@media (max-width:585px){
+    
+    #method .cont .icon .icon_img p{font-size: 13px;}
+    #method .cont .icon .icon_img h2{font-size: 22px;}
+
+    #nonstop .bg .cont .cont_line .icon .icon_img{width: calc(100% / 2 - 5px);}
+    #nonstop .bg .cont .cont_line .icon{flex-wrap: wrap; transition: 0.5s;}
+
+    #nonstop .bg .cont .cont_line .title h2{font-size: 22px;}
+    #nonstop .bg .cont .cont_line .title h1{font-size: 28px;}
+    
+    #nonstop .bg .cont .cont_line .icon .icon_img .box .img{height: 100px;}
+    #nonstop .bg .cont .cont_line .icon .icon_img .box {height: 175px;}
+    #nonstop .bg .cont .cont_line .icon .icon_img{height: 280px;}
+}
+
+@media (max-width:465px){
+    #method .cont .icon .icon_img .img{width: 60%; height: 90px; background-size: 75px;}
+}
+
+@media (max-width:410px){
+    #method .cont .icon .icon_img .img{width: 100%;}
+    #method .cont .title h3 span{font-size: 35px; }
+    #method .cont .title h3{font-size: 25px;letter-spacing: 0px;}
+    #method .cont .title p{font-size: 18px;}
+
+    #nonstop .bg .cont .cont_line .title h2{font-size: 18px;}
+    #nonstop .bg .cont .cont_line .title h1{font-size: 18px;}
+
+    #nonstop .bg .cont .cont_line .icon .icon_img{width: calc(100%);}
+
+    #nonstop .bg .cont .cont_line .icon .icon_img .box h2{font-size: 22px;}
+    #nonstop .bg .cont .cont_line .icon .icon_img .box p{font-size: 13px;}
+    #nonstop .bg .cont .cont_line .icon .icon_img .arrow{width: 15px; height: 20px;}
+
+}
+
+/* main 모바일 */
+@media (max-width:1024px){
+    #main{background-size: 1000px; height: 395px;  padding: 69px 0 0;}
+    #main .bg{height: 325px;}
+    #main .title h3{font-size: 50px; letter-spacing: 10px;}
+    #main .title p{font-size: 12px;}
+}
+
+@media (max-width:600px){
+   
+
+    #main{background-size: 800px; height: 395px;}
+    #main .bg{height: 325px;}
+    #main .title h3{font-size: 38px;}
+    #main .title p{font-size: 10px;}
+}
+
+@media (max-width:428px){
+    #main .title h3{font-size: 28px;}
+    #main .title p{font-size: 8px;}
+}
+
+@media (max-width:380px){
+    #main{background-size: 600px;}
+    #main .title h3{font-size: 25px;}
+    #main .title p{font-size: 8px;}
+}
+
+

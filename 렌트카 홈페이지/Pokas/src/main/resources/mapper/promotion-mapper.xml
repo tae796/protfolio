@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="promotion">
+
+	<!-- 프로모션 작성 -->
+	<insert id="prom_insert" parameterType="pokas.web.dto.PromotionDTO">
+		insert into smile_promotion values(null, #{name},#{product_type},#{grade},#{oil_type},#{cc},#{oil_rate},#{agreement_dist},#{guarantee},#{option},#{months},#{price},#{start_ddt},#{end_ddt},#{image})
+	</insert>
+	
+	<select id="c_selectcount" resultType="int">
+		select count(*) from smile_promotion
+	</select>
+
+	<!-- 프로모션 보기 -->
+	<select id="prom_all" resultType="pokas.web.dto.PromotionDTO">
+		select * from smile_promotion order by id desc limit #{start},#{end}
+	</select>
+	
+	<select id="prom_all1" resultType="pokas.web.dto.PromotionDTO">
+		select * from smile_promotion order by id desc
+	</select>
+	
+	<select id="prom_one" resultType="pokas.web.dto.PromotionDTO">
+		select * from smile_promotion where id = #{id}
+	</select>
+	
+
+	<update id="prom_update" parameterType="pokas.web.dto.PromotionDTO">
+		update smile_promotion set name = #{name}, product_type = #{product_type}, grade = #{grade}, oil_type = #{oil_type}, cc = #{cc}, oil_rate = #{oil_rate}, agreement_dist = #{agreement_dist}, guarantee = #{guarantee}, option = #{option}, months = #{months},price = #{price}, start_ddt = #{start_ddt}, end_ddt= #{end_ddt}, image=#{image}  where id = #{id}
+	</update>
+
+	<!-- 프로모션 삭제 -->
+	<delete id="prom_delete">
+		delete from smile_promotion where id=#{id}
+	</delete>
+	
+
+	
+	
+	
+</mapper>
